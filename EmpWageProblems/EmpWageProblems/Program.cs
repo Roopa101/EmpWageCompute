@@ -8,9 +8,17 @@ namespace EmpWageProblems
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to EmpWageComputation");
+            int isPresent = 1;
+
+            Random employee = new Random();
+            int randomInput = employee.Next(0, 2);
+
+            if (randomInput == isPresent)
+                Console.WriteLine("Employee is Present");
+            else
+                Console.WriteLine("Employee is Absent");
             Console.ReadLine();
         }
     }
