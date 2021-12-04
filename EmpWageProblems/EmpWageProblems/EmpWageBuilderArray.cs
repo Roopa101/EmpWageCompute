@@ -18,9 +18,9 @@ namespace EmpWageProblems
         {
             this.companyEmpWageArray = new CompanyEmpWage[5];
         }
-        public void addCompanyEmpWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth)
+        public void addCompanyEmpWage(string company, int ratePerHrs, int NO_OF_WORKING_Days, int MAX_HRS_IN_Month)
         {
-            companyEmpWageArray[this.numOfCompany] = new CompanyEmpWage(company, empRatePerHour, numOfWorkingDays, maxHoursPerMonth);
+            companyEmpWageArray[this.numOfCompany] = new CompanyEmpWage(company, ratePerHrs, NO_OF_WORKING_Days, MAX_HRS_IN_Month);
             numOfCompany++;
 
         }
